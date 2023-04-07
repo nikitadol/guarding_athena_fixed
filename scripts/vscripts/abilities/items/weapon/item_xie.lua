@@ -1,0 +1,6 @@
+item_xie = class({})
+item_xie_1 = class({}, nil, item_xie)
+item_xie_2 = class({}, nil, item_xie)
+item_xie_3 = class({}, nil, item_xie)
+item_xie_4 = class({}, nil, item_xie)
+item_xie_5 = class({}, nil, item_xie)

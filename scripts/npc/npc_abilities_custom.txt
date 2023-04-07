@@ -1,0 +1,170 @@
+#base "kv/abilities/ability_heroes.kv"
+#base "kv/abilities/ability_nature.kv"
+#base "kv/abilities/ability_enemy.kv"
+#base "kv/abilities/ability_pet.kv"
+#base "kv/abilities/ability_courier.kv"
+#base "kv/abilities/common_abilities.kv"
+// #base "kv/abilities/boss_abilities.kv"
+// #base "kv/abilities/enemy_abilities.kv"
+
+"DOTAAbilities"
+{
+	"unit_state"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/unit_state"
+		"AbilityTextureName"			""
+		"MaxLevel"						"0"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	}
+	"empty_1"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel"						"0"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	}
+	"empty_2"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel"						"0"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	}
+	"empty_3"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel"						"0"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	}
+	"empty_4"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel"						"0"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	}
+	"talent"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"empty"
+		"MaxLevel"						"0"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	}
+	"dash"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/dash"
+		"AbilityTextureName"			"dark_seer_surge"
+		"MaxLevel"						"1"
+		"AbilityManaCost"				"5"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_OPTIONAL_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"0.1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"max_distance"					"500"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"min_distance"					"100"
+			}
+		}
+	}
+	"courier_give_item_to_hero"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/courier_give_item_to_hero"
+		"AbilityTextureName"			"courier_transfer_items"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_RUNE_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityCooldown"				"0.1"
+	}
+	"courier_pick_item"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/courier_pick_item"
+		"AbilityTextureName"			"courier_queue_pickup_from_stash"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityCooldown"				"0.1"
+	}
+	"courier_drop_item"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/courier_drop_item"
+		"AbilityTextureName"			"courier_return_stash_items"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityCooldown"				"0.1"
+	}
+	"courier_combine_item"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/courier_combine_item"
+		"AbilityTextureName"			"action_patrol"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityCooldown"				"0.1"
+	}
+	"courier_teleport_item"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/courier_teleport_item"
+		"AbilityTextureName"			"courier_return_to_base"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityCooldown"				"0.1"
+	}
+	"dialog_event_ability_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/dialog_event_ability"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"dialog_event_ability_2"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/dialog_event_ability"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"dialog_event_ability_3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/dialog_event_ability"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"dialog_event_ability_4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/dialog_event_ability"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"dialog_event_ability_5"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/dialog_event_ability"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"dialog_event_ability_6"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/dialog_event_ability"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+}

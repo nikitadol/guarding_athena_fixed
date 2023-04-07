@@ -1,0 +1,174 @@
+// No spaces in event names, max length 32
+// All strings are case sensitive
+//
+// valid data key types are:
+//   string : a zero terminated string
+//   bool   : unsigned int, 1 bit
+//   byte   : unsigned int, 8 bit
+//   short  : signed int, 16 bit
+//   long   : signed int, 32 bit
+//   float  : float, 32 bit
+//   uint64 : unsigned int 64 bit
+//   local  : any data, but not networked to clients
+//
+// following key names are reserved:
+//   local      : if set to 1, event is not networked to clients
+//   unreliable : networked, but unreliable
+//   suppress   : never fire this event
+//   time	: firing server time
+//   eventid	: holds the event ID
+
+"CustomEvents"
+{
+	"trigger_start_touch"
+	{
+		"trigger_name"				"string"
+		"activator_entindex"		"short"
+		"caller_entindex"			"short"
+	}
+	"trigger_end_touch"
+	{
+		"trigger_name"				"string"
+		"activator_entindex"		"short"
+		"caller_entindex"			"short"
+	}
+	"custom_inventory_contents_changed"
+	{
+		"EntityIndex"				"short"
+	}
+	"custom_npc_first_spawned"
+	{
+		"entindex"					"short"
+	}
+	"custom_trigger_event"
+	{
+		"event_name"				"string"
+		"outputid"					"short"
+		"activator_ent_index"		"short"
+		"caller_ent_index"			"short"
+	}
+	"custom_entity_removed"
+	{
+		"entindex"					"short"
+	}
+	"custom_round_state_change"
+	{
+		"round_number"				"short"
+		"round_state"				"short"
+	}
+	"custom_player_first_spawned"
+	{
+		"PlayerID"					"short"
+		"userid"					"short"
+	}
+	"custom_player_reconnect"
+	{
+		"PlayerID"					"short"
+		"userid"					"short"
+	}
+	"custom_enter_room"
+	{
+		"entindex"					"short"
+		"roomIndex"					"string"
+	}
+	"custom_teleport"
+	{
+		"entindex"					"short"
+		"point_name"				"string"
+	}
+	"custom_time_event"
+	{
+		"tick_time"					"float"
+	}
+	"custom_dialog_event"
+	{
+		"PlayerID"					"short"
+		"dialog_event_name"			"string"
+	}
+	// UI Events
+	"custom_update_fps"
+	{
+		"fps"						"short"
+	}
+	"custom_get_ability_cooldown"
+	{
+		"ability_ent_index"			"short"
+		"level"						"short"
+	}
+	"custom_get_ability_mana_cost"
+	{
+		"ability_ent_index"			"short"
+		"level"						"short"
+	}
+	"custom_get_ability_gold_cost"
+	{
+		"ability_ent_index"			"short"
+		"level"						"short"
+	}
+	"custom_get_ability_energy_cost"
+	{
+		"ability_ent_index"			"short"
+		"level"						"short"
+	}
+	"custom_get_ability_special_value"
+	{
+		"ability_ent_index"			"short"
+		"level"						"short"
+		"key_name"					"string"
+	}
+	"custom_get_unit_data"
+	{
+		"unit_ent_index"			"short"
+		"function_name"				"string"
+	}
+	"custom_vector_ability"
+	{
+		"type"						"short"
+		"ability_ent_index"			"short"
+		"x"							"float"
+		"y"							"float"
+		"z"							"float"
+	}
+	"custom_ui_toggle_windows"
+	{
+		"local"						"1"
+		"window_name"				"string"
+	}
+	"custom_enemy_spawn"
+	{
+		"entindex"					"short"
+	}
+	"update_keybind"
+	{
+		"key_name"						"string"
+		"key_type"						"string"
+	}
+	"custom_refresh_order"
+	{
+		"local"						"1"
+		"name"						"string"
+	}
+	"custom_hover_item"
+	{
+		"item_entindex"				"short"
+	}
+	"custom_get_active_ability"
+	{
+		"entindex"					"short"
+	}
+	"custom_exp_change"
+	{
+		"entindex"					"short"
+	}
+	"custom_item_check"
+	{
+		"local"						"1"
+		"itemname"					"string"
+	}
+	"date_now"
+	{
+		"local"						"1"
+		"date"						"string"
+	}
+}
+

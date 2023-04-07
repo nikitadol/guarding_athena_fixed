@@ -1,0 +1,246 @@
+"KeyValue"
+{
+	"demon_chains_1"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/demon_chains_1"
+		"AbilityTextureName"					"warlock_golem_flaming_fists"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage"					"18"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_radius"					"350"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"15"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"500"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"0.5"
+			}
+		}
+	}
+	"demon_chains_2"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/demon_chains_2"
+		"AbilityTextureName"					"warlock_golem_permanent_immolation"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"12"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+		}
+	}
+	"demon_chains_3"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/demon_chains_3"
+		"AbilityTextureName"					"warlock_rain_of_chaos"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aura_hp_regen_percent"			"4"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aura_attack_percent"			"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aura_attackspeed"				"80"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aura_radius"					"900"
+			}
+		}
+	}
+	"anneal"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/anneal"
+		"AbilityTextureName"					"chaos_knight_chaos_strike"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"exp"							"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"gold"							"20"
+			}
+		}
+	}
+	"npc_task_bh"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/npc_task"
+		"AbilityTextureName"					"bounty_hunter_track"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	}
+	"npc_task_cuihua"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/npc_task"
+		"AbilityTextureName"					"bounty_hunter_track"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	}
+	"npc_task_bajie"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/npc_task"
+		"AbilityTextureName"					"bounty_hunter_track"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	}
+	"npc_task_simon"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/npc_task"
+		"AbilityTextureName"					"bounty_hunter_track"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	}
+	"npc_task_bearzky"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/npc_task"
+		"AbilityTextureName"					"bounty_hunter_track"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	}
+	"npc_task_beaverknight"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/npc_task"
+		"AbilityTextureName"					"bounty_hunter_track"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	}
+	"ciba"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/ciba"
+		"AbilityTextureName"					"meepo_divided_we_stand"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+	}
+	"athena_heal"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/athena_heal"
+		"AbilityTextureName"					"enchantress_natures_attendants"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"						"120"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health"						"80"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana"							"16"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+		}
+	}
+	"athena_guard"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/common/athena_guard"
+		"AbilityTextureName"					"lich_frost_armor"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"						"180"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"reduce"						"25"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor"							"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+		}
+	}
+}

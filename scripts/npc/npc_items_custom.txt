@@ -1,0 +1,76 @@
+#base "kv/abilities/items.kv"
+#base "kv/abilities/item_shop.kv"
+#base "kv/abilities/item_drops.kv"
+#base "kv/abilities/item_essence.kv"
+#base "kv/abilities/item_ring.kv"
+// #base "kv/items/deputy.kv"
+#base "kv/items/recipe.kv"
+// #base "kv/items/artifact.kv"
+#base "kv/items/scepter.kv"
+
+"DOTAAbilities"
+{
+	"item_blank"
+	{
+		"BaseClass"								"item_datadriven"
+		"AbilityTextureName"					"item_lockicon"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ItemKillable"							"0"
+		"ItemSellable"							"0"
+		"ItemPurchasable"						"0"
+		"ItemDroppable"							"0"
+		"AllowedInBackpack"						"1"
+	}
+	"item_blink_dev"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_blink_dev"
+		"AbilityTextureName"					"item_super_blink"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"0"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+	}	
+	"item_back"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_back"
+		"AbilityTextureName"					"item_tpscroll"
+		"ItemPurchasable"						"0"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"0.1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"item_training"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_training"
+		"AbilityTextureName"					"item_nian_flag_trap"
+		"MaxLevel"								"1"
+		"ItemPurchasable"						"0"
+		"AbilityCooldown"						"0.1"
+		"ItemIsNeutralDrop"						"1"
+		"DisplayOverheadAlertOnReceived"		"0"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"item_dialog_event"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"abilities/common/dialog_event_ability"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+	"item_devour"
+	{
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_devour"
+		"Model"									"models/props_gameplay/smoke.vmdl"
+		"AbilityTextureName"					"item_orb_of_passage"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"0.1"
+		"ItemStackable"							"1"
+		"ItemPermanent"							"0"
+		"ItemInitialCharges"					"1"
+		"CustomItemType"						"CUSTOM_ITEM_TYPE_DEVOUR"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_RUNE_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_SILENCE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	}
+}

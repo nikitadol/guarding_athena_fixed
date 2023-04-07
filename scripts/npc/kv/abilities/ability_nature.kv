@@ -1,0 +1,903 @@
+"KeyValue"
+{
+	"ogre_strike"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/ogre_strike"
+		"AbilityTextureName"					"meepo_geostrike_scavenger"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastRange"						"583"
+		"AbilityCastPoint"						"1.7"
+		"AbilityCooldown"						"12"
+		"AbilityManaCost"						"80"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"400"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"12000"
+			}
+		}
+	}
+	"ogre_jump_strike"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/ogre_jump_strike"
+		"AbilityTextureName"					"brewmaster_thunder_clap"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastPoint"						"2.1"
+		"AbilityCooldown"						"8"
+		"AbilityManaCost"						"80"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"400"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"12000"
+			}
+		}
+	}
+	"boss_beat"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_beat"
+		"AbilityTextureName"					"polar_furbolg_ursa_warrior_thunder_clap"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastRange"						"250"
+		"AbilityCastPoint"						"0.5"
+		"AbilityCooldown"						"4"
+		"AbilityManaCost"						"60"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stun_duration"					"0.1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"5000"
+			}
+		}
+	}
+	"hell_beast_aura"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/hell_beast_aura"
+		"AbilityTextureName"					"kobold_taskmaster_speed_aura"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_pct"					"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed"						"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aura_radius"					"500"
+			}
+		}
+	}
+	"boss_stone"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_stone"
+		"AbilityTextureName"					"granite_golem_hp_aura"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_reduce"				"30"
+			}
+		}
+	}
+	"dog_wound"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/dog_wound"
+		"AbilityTextureName"					"life_stealer_open_wounds"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_reduce"					"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed"						"20"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+		}
+	}
+	"boss_rage"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_rage"
+		"AbilityTextureName"					"life_stealer_rage"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCooldown"						"10"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attakc_time"					"0.8"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed"						"100"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damaeg_pct"					"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"dragon_energy_ball"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/dragon_energy_ball"
+		"AbilityTextureName"					"satyr_hellcaller_shockwave"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastRange"						"600"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"4"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"200"
+			}
+		}
+	}
+	"boss_invisible"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_invisible"
+		"AbilityTextureName"					"sandking_sand_storm"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"5000"
+			}
+		}
+	}
+	"boss_burrowstrike"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_burrowstrike"
+		"AbilityTextureName"					"sandking_burrowstrike"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastRange"						"900"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"8"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"12000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"200"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"2.17"
+			}
+		}
+	}
+	"boss_epicenter"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_epicenter"
+		"AbilityTextureName"					"sandking_epicenter"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCooldown"						"30"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"12000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"900"
+			}
+		}
+	}
+	"boss_soulbody"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_soulbody"
+		"AbilityTextureName"					"visage_gravekeepers_cloak"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"60"
+			}
+		}
+	}
+	"boss_soulconnect"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_soulconnect"
+		"AbilityTextureName"					"visage_soul_assumption"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCooldown"						"30"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+		}
+	}
+	"boss_soulclash"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_soulclash"
+		"AbilityTextureName"					"visage_grave_chill"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastRange"						"600"
+		"AbilityCooldown"						"30"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"60"
+			}
+		}
+	}
+	"zombie_tower"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/zombie_tower"
+		"AbilityTextureName"					"undying_tombstone"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"30"
+			}
+		}
+	}
+	"trial"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/trial"
+		"AbilityTextureName"					"mars_arena_of_blood"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastPoint"						"0.3"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"900"
+			}
+		}
+	}
+	"bash"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/bash"
+		"AbilityTextureName"					"mars_gods_rebuke"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastRange"						"200"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"3"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"500"
+			}
+		}
+	}
+	"shield_block"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/shield_block"
+		"AbilityTextureName"					"mars_bulwark"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCooldown"						"6"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"100"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed_duration"			"2"
+			}
+		}
+	}
+	"mana_break"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/mana_break"
+		"AbilityTextureName"					"nyx_assassin_mana_burn"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"25"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana"							"30"
+			}
+		}
+	}
+	"boss_fire_stun"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_fire_stun"
+		"AbilityTextureName"					"ember_spirit_sleight_of_fist"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"8000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal"							"5000"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"25"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"2"
+			}
+		}
+	}
+	"boss_fire_land"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_fire_land"
+		"AbilityTextureName"					"doom_bringer_doom"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"8000"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"3"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal"							"20000"
+			}
+		}
+	}
+	"boss_fire_reborn"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_fire_reborn"
+		"AbilityTextureName"					"doom_bringer_scorched_earth"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"boss_absorb"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_absorb"
+		"AbilityTextureName"					"treant_leech_seed"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastRange"						"600"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"12"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal"							"40000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"20000"
+			}
+		}
+	}
+	"boss_green_protect"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_green_protect"
+		"AbilityTextureName"					"treant_living_armor"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCastPoint"						"0.5"
+		"AbilityCooldown"						"20"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor"							"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduce"					"40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"regen"							"4000"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"boss_overgrowth"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_overgrowth"
+		"AbilityTextureName"					"treant_overgrowth"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_5"
+		"AbilityCastPoint"						"0.5"
+		"AbilityCooldown"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"900"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"10000"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"regen"							"8"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed"						"100"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"12"
+			}
+		}
+	}
+	"boss_untouchable"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_untouchable"
+		"AbilityTextureName"					"enchantress_untouchable"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"slow_attack_speed"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"100"
+			}
+		}
+	}
+	"hit_back"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/hit_back"
+		"AbilityTextureName"					"enchantress_impetus"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+	}
+	"arcane_attack"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/arcane_attack"
+		"AbilityTextureName"					"obsidian_destroyer_arcane_orb"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage"					"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_attack_speed"			"100 200 300 400"
+			}
+		}
+	}
+	"original_crash"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/original_crash"
+		"AbilityTextureName"					"obsidian_destroyer_sanity_eclipse"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastRange"						"600"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"20"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_damage"					"1000 2000 3000 4000"
+			}
+		}
+	}
+	"boss_chaos_land"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_chaos_land"
+		"AbilityTextureName"					"doom_bringer_scorched_earth"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"20000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aura_radius"					"600"
+			}
+		}
+	}
+	"boss_chaos_fall"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_chaos_fall"
+		"AbilityTextureName"					"invoker_chaos_meteor"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_ATTACK"
+		"AbilityCastRange"						"600"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"20"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"120000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+		}
+	}
+	"demon_sun_strike"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/demon_sun_strike"
+		"AbilityTextureName"					"invoker_sun_strike"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_ATTACK"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"15"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"300000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"175"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"delay"							"1.7"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"900"
+			}
+		}
+	}
+	"boss_hell_fist"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/nature/boss_hell_fist"
+		"AbilityTextureName"					"doom_bringer_infernal_blade"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityCastAnimation"					"ACT_DOTA_ATTACK"
+		"AbilityCastRange"						"300"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"8"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stun_duration"					"0.1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_percent"				"25"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per_second"				"20000"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"3"
+			}
+		}
+	}
+}

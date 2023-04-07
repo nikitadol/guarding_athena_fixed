@@ -1,0 +1,317 @@
+"KeyValue"
+{
+	"privilege_1"
+	{
+		"Note"									"召唤物的持续时间提升"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"50"
+			}
+		}
+	}
+	"privilege_2"
+	{
+		"Note"									"击杀锁妖塔Boss时，必定掉落法宝"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_3"
+	{
+		"Note"									"可以召唤傀儡木偶进行钓鱼"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_GLOBAL"
+		"IsStackable"							"0"
+	}
+	"privilege_4"
+	{
+		"Note"									"可以召唤傀儡木偶进行挖宝"
+		"ScriptFile"							"abilities/privilege/privilege_4"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_GLOBAL"
+		"IsStackable"							"0"
+	}
+	"privilege_5"
+	{
+		"Note"									"第N波开始（支持配置出生即获得）时获得物品（如吞噬丹）/物品池中随机（如随机SS装备）"
+		"ScriptFile"							"abilities/privilege/privilege_5"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"round"							"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"name"							"item_devour"
+			}
+		}
+	}
+	"privilege_6"
+	{
+		"Note"									"修改怪物的重生时间"
+		"ScriptFile"							"abilities/privilege/privilege_6"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_GLOBAL"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unit_name"						"treasure_hunt_1_2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"key"							"fSpawnInterval"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"1"
+			}
+		}
+	}
+	"privilege_7"
+	{
+		"Note"									"修改怪物刷新点"
+		"ScriptFile"							"abilities/privilege/privilege_7"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_GLOBAL"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unit_name"						"tartarus_2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"key"							"sSpawnerName"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"tartarus_6_3"
+			}
+		}
+	}
+	"privilege_8"
+	{
+		"Note"									"吞噬后仍可携带同名装备"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_9"
+	{
+		"Note"									"吞噬上限+1"
+		"ScriptFile"							"abilities/privilege/privilege_9"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"1"
+			}
+		}
+	}
+	"privilege_10"
+	{
+		"Note"									"铸造上限+1"
+		"ScriptFile"							"abilities/privilege/privilege_10"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"1"
+			}
+		}
+	}
+	"privilege_11"
+	{
+		"Note"									"练功房怪物数量+1"
+		"ScriptFile"							"abilities/privilege/privilege_11"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"1"
+			}
+		}
+	}
+	"privilege_12"
+	{
+		"Note"									"存档装备掉率+10%"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"10"
+			}
+		}
+	}
+	"privilege_13"
+	{
+		"Note"									"存档装备品质+10%"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"10"
+			}
+		}
+	}
+	"privilege_14"
+	{
+		"Note"									"钓鱼不会miss"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_15"
+	{
+		"Note"									"每日第一次使用某一种消耗品免费"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_16"
+	{
+		"Note"									"小瓶子不需要杀敌直接生效"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_17"
+	{
+		"Note"									"自动挖宝"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_18"
+	{
+		"Note"									"自动钓鱼"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_19"
+	{
+		"Note"									"自动拾取藏宝图"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_20"
+	{
+		"Note"									"挖宝自动漂移"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_21"
+	{
+		"Note"									"消耗品灵符重铸物品时必定2选1"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_22"
+	{
+		"Note"									"每局前1次合成SS品质物品时2选1"
+		"ScriptFile"							"abilities/privilege/privilege_22"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"1"
+	}
+	"privilege_23"
+	{
+		"Note"									"每局前1次重铸SS物品时必定2选1"
+		"ScriptFile"							"abilities/privilege/privilege_23"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"1"
+	}
+	"privilege_24"
+	{
+		"Note"									"重铸SS物品触发幸运一击时选择加1"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"30"
+			}
+		}
+	}
+	"privilege_25"
+	{
+		"Note"									"开局解锁觉醒功能"
+		"ScriptFile"							"abilities/privilege/privilege_25"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_26"
+	{
+		"Note"									"开局解锁铸造功能"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_27"
+	{
+		"Note"									"将军令"
+		"ScriptFile"							"abilities/privilege/privilege_27"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_PLAYER"
+		"IsStackable"							"0"
+	}
+	"privilege_28"
+	{
+		"Note"									"开局解锁团队boss功能，初始出生时间-5分钟"
+		"ScriptFile"							"abilities/privilege/privilege_28"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_GLOBAL"
+		"IsStackable"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"300"
+			}
+		}
+	}
+	"privilege_29"
+	{
+		"Note"									"锁妖塔2层和6层之间打开一个传送门"
+		"ScriptFile"							"abilities/privilege/privilege_29"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_GLOBAL"
+		"IsStackable"							"0"
+	}
+	"privilege_30"
+	{
+		"Note"									"抽奖返回30%资源（不要用）"
+		"type"									"CUSTOM_PRIVILEGE_TYPE_GLOBAL"
+		"IsStackable"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"value"							"30"
+			}
+		}
+	}
+}

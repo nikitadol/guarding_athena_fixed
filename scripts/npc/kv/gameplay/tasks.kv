@@ -1,0 +1,358 @@
+"Quests"
+{
+	"KillPracticer"
+	{
+		"TaskTag"						"TASK_TAG_AUTO_COMPLETE,TASK_TAG_CANT_ABANDONED,TASK_TAG_REPEAT"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"practicer"
+				"TaskStageCount"		"500"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_EXP,200"
+			}
+			"2"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_GOLD,1000"
+			}
+			"3"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ATTRIBUTE"
+				"TaskRewardName"		"CUSTOM_ATTRIBUTE_KILL_GOLD,5"
+			}
+		}
+		"AutoComplete"	"1"
+	}
+	"Defense1"
+	{
+		"TaskTag"						"TASK_TAG_AUTO_COMPLETE,TASK_TAG_CANT_ABANDONED,TASK_TAG_HIDE"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"wave_[0-9]*"
+				"TaskStageCount"		"3"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_MODIFIER"
+				"TaskRewardName"		"modifier_guarding_1,1"
+			}
+		}
+		"AutoComplete"	"1"
+	}
+	"Defense2"
+	{
+		"TaskTag"						"TASK_TAG_AUTO_COMPLETE,TASK_TAG_CANT_ABANDONED,TASK_TAG_HIDE"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"wave_[0-9]*"
+				"TaskStageCount"		"700"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_MODIFIER"
+				"TaskRewardName"		"modifier_guarding_2,1"
+			}
+		}
+		"AutoComplete"	"1"
+	}
+	"Defense3"
+	{
+		"TaskTag"						"TASK_TAG_AUTO_COMPLETE,TASK_TAG_CANT_ABANDONED,TASK_TAG_HIDE"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"wave_[0-9]*"
+				"TaskStageCount"		"1600"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_MODIFIER"
+				"TaskRewardName"		"modifier_guarding_3,1"
+			}
+		}
+		"AutoComplete"	"1"
+	}
+	"Defense4"
+	{
+		"TaskTag"						"TASK_TAG_AUTO_COMPLETE,TASK_TAG_CANT_ABANDONED,TASK_TAG_HIDE"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"wave_[0-9]*"
+				"TaskStageCount"		"2400"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_MODIFIER"
+				"TaskRewardName"		"modifier_guarding_4,1"
+			}
+		}
+		"AutoComplete"	"1"
+	}
+	"KillKoboldLord"
+	{
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"kobold_lord"
+				"TaskStageCount"		"3"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ITEM"
+				"TaskRewardName"		"item_zhanqi,1"
+			}
+			"2"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_EXP,1500"
+			}
+		}
+	}
+	"KillHellBeast"
+	{
+		"UnlockType"		"TASK_UNLOCK_TYPE_TASK"
+		"UnlockName"		"KillKoboldLord"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"hell_beast"
+				"TaskStageCount"		"2"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ITEM"
+				"TaskRewardName"		"item_xiongpi,1"
+			}
+			"2"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_EXP,2000"
+			}
+		}
+	}
+	"KillAcientGolem"
+	{
+		"UnlockType"		"TASK_UNLOCK_TYPE_TASK"
+		"UnlockName"		"KillHellBeast"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"ancient_golem"
+				"TaskStageCount"		"1"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ITEM"
+				"TaskRewardName"		"item_hexin,1"
+			}
+			"2"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_EXP,3000"
+			}
+		}
+	}
+	"KillFireDemon"
+	{
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"boss_fire_demon"
+				"TaskStageCount"		"1"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ITEM"
+				"TaskRewardName"		"item_yunshizhaohuan,1"
+			}
+		}
+	}
+	"Trial"
+	{
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"trial_creep"
+				"TaskStageCount"		"1"
+				"TaskPosition"			"-2763,295,512"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_SCEPTER"
+			}
+		}
+	}
+	"Reborn"
+	{
+		"TaskTag"						"TASK_TAG_AUTO_COMPLETE,TASK_TAG_CANT_ABANDONED"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"boss_iapetos"
+				"TaskStageCount"		"1"
+				"TaskPosition"			"6656,-6464,393"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ITEM"
+				"TaskRewardName"		"item_butianshi,1|item_enchant,1"
+			}
+			"2"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_REBORN"
+			}
+		}
+		"AutoComplete"	"1"
+	}
+	"Bearzky_Zombie"
+	{
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"zombie_stand"
+				"TaskStageCount"		"10"
+			}
+			"2"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"zombie_disable"
+				"TaskStageCount"		"8"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ITEM"
+				"TaskRewardName"		"item_mirror,1"
+			}
+		}
+	}
+	"Bearzky_SandKing"
+	{
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"zombie_tower"
+				"TaskStageCount"		"4"
+			}
+			"2"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"boss_sandking"
+				"TaskStageCount"		"1"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_ATTRIBUTE"
+				"TaskRewardName"		"CUSTOM_ATTRIBUTE_ALL,200"
+			}
+		}
+	}
+	"Beaverknight_Ogre"
+	{
+		"TaskTag"						"TASK_TAG_REPEAT"
+		"TaskStage"
+		{
+			"1"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"ogre"
+				"TaskStageCount"		"6"
+			}
+			"2"
+			{
+				"TaskStageType"			"TASK_STAGE_TYPE_KILL"
+				"TaskStageTarget"		"boss_ogre"
+				"TaskStageCount"		"2"
+			}
+		}
+		"TaskReward"
+		{
+			"1"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_GOLD,3000"
+			}
+			"2"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_CRYSTAL,100"
+			}
+			"3"
+			{
+				"TaskRewardType"		"TASK_REWARD_TYPE_RESOURCE"
+				"TaskRewardName"		"CUSTOM_RESOURCE_TYPE_EXP,1000"
+			}
+		}
+	}
+}

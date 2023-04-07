@@ -1,0 +1,4 @@
+#base "kv/units/npc_heroes.kv"
+"KeyValue"
+{
+}
