@@ -49,46 +49,46 @@ require("abilities/init")
 require("modifiers/init")
 
 function Precache(context)
-	local tPrecacheList = require("precache")
-	for sPrecacheMode, tList in pairs(tPrecacheList) do
-		for _, sResource in pairs(tList) do
-			PrecacheResource(sPrecacheMode, sResource, context)
-		end
-	end
-
-	for k, v in pairs(KeyValues.AbilitiesKv) do
-		if k ~= "Version" then
-			if v.precache and type(v.precache) == "table" then
-				for sPrecacheMode, sResource in pairs(v.precache) do
-					PrecacheResource(sPrecacheMode, sResource, context)
-				end
-			end
-		end
-	end
-	for k, v in pairs(KeyValues.ItemsKv) do
-		if k ~= "Version" then
-			if v.precache and type(v.precache) == "table" then
-				for sPrecacheMode, sResource in pairs(v.precache) do
-					PrecacheResource(sPrecacheMode, sResource, context)
-				end
-			end
-		end
-	end
-
-	for k, v in pairs(KeyValues.UnitsKv) do
-		if k ~= "Version" then
-			PrecacheUnitByNameSync(k, context)
-		end
-	end
-
-	for k, v in pairs(KeyValues.ItemsKv) do
-		if k ~= "Version" then
-			PrecacheItemByNameSync(k, context)
-		end
-	end
-	for index, tData in pairs(KeyValues.CouriersKV) do
-		PrecacheResource("model", tData.Model, context)
-	end
+	--local tPrecacheList = require("precache")
+	--for sPrecacheMode, tList in pairs(tPrecacheList) do
+	--	for _, sResource in pairs(tList) do
+	--		PrecacheResource(sPrecacheMode, sResource, context)
+	--	end
+	--end
+	--
+	--for k, v in pairs(KeyValues.AbilitiesKv) do
+	--	if k ~= "Version" then
+	--		if v.precache and type(v.precache) == "table" then
+	--			for sPrecacheMode, sResource in pairs(v.precache) do
+	--				PrecacheResource(sPrecacheMode, sResource, context)
+	--			end
+	--		end
+	--	end
+	--end
+	--for k, v in pairs(KeyValues.ItemsKv) do
+	--	if k ~= "Version" then
+	--		if v.precache and type(v.precache) == "table" then
+	--			for sPrecacheMode, sResource in pairs(v.precache) do
+	--				PrecacheResource(sPrecacheMode, sResource, context)
+	--			end
+	--		end
+	--	end
+	--end
+	--
+	--for k, v in pairs(KeyValues.UnitsKv) do
+	--	if k ~= "Version" then
+	--		PrecacheUnitByNameSync(k, context)
+	--	end
+	--end
+	--
+	--for k, v in pairs(KeyValues.ItemsKv) do
+	--	if k ~= "Version" then
+	--		PrecacheItemByNameSync(k, context)
+	--	end
+	--end
+	--for index, tData in pairs(KeyValues.CouriersKV) do
+	--	PrecacheResource("model", tData.Model, context)
+	--end
 end
 
 function SpawnGroupPrecache(hSpawnGroup, context)
