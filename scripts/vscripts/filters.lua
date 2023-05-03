@@ -272,6 +272,8 @@ end
 function public:init(bReload)
 	local GameMode = GameRules:GetGameModeEntity()
 
+	GameMode:SetRuneEnabled( DOTA_RUNE_XP, false )
+	GameMode:SetXPRuneSpawnInterval(99999)
 	GameMode:SetAbilityTuningValueFilter(Dynamic_Wrap(public, "AbilityTuningValueFilter"), public)
 	GameMode:SetBountyRunePickupFilter(Dynamic_Wrap(public, "BountyRunePickupFilter"), public)
 	GameMode:SetDamageFilter(Dynamic_Wrap(public, "DamageFilter"), public)
